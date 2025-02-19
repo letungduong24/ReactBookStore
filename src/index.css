@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@tailwind utilities;
+
+
+html{
+    box-sizing: border-box;
+}
+
