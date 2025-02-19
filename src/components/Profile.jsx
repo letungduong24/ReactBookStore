@@ -43,7 +43,7 @@ const Profile = () => {
                         case 3:
                           return "Thành viên";
                         default:
-                          return "Trống";
+                          return user.role;
                       }
                     })()}
                   </p>
