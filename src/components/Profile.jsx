@@ -30,6 +30,23 @@ const Profile = () => {
                   <p className="text-amber-900">Địa chỉ: {user.address || "Trống"}</p>
                   <p className="text-amber-900">Email: {user.email || "Chưa cập nhật"}</p>
                   <p className="text-amber-900">SĐT: {user.phone || "Trống"}</p>
+                  <p className="text-amber-900">
+                    Quyền:{" "}
+                    {(() => {
+                      switch (user.role) {
+                        case 0:
+                          return "Quản trị viên";
+                        case 1:
+                          return "Nhân viên";
+                        case 2:
+                          return "Nhà cung cấp";
+                        case 3:
+                          return "Thành viên";
+                        default:
+                          return "Trống";
+                      }
+                    })()}
+                  </p>
                 </div>
                 <UserOrders />
               </div>
