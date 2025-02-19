@@ -50,7 +50,7 @@ const NavBar = () => {
                         </button>
                       </li>
                     ))}
-                    {user && user.role === 0 && (
+                    {user && user.role == 0 && (
                       <li>
                         <button className="cursor-pointer hover:text-white transition duration-150 hover:bg-amber-600 w-24 inline-block p-2 rounded" onClick={() => {navigate('/admin')}}>
                           AdminPanel

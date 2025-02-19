@@ -33,7 +33,7 @@ const Profile = () => {
                   <p className="text-amber-900">
                     Quyền:{" "}
                     {(() => {
-                      switch (user.role) {
+                      switch (parseInt(user.role, 10)) {
                         case 0:
                           return "Quản trị viên";
                         case 1:
